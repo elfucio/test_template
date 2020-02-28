@@ -250,8 +250,66 @@ header {
       text-align: center; }
 
 .benefits {
+  padding-top: 87px;
   background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%); }
+  .benefits-bg-wrapper {
+    background: url("../assets/images/screens-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    padding-bottom: 155px; }
+  .benefits__heading {
+    flex-basis: 50%;
+    max-width: 1030px;
+    margin: 0 auto;
+    font-family: "Exo2-SemiBold", Arial, sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 56px;
+    text-transform: uppercase;
+    padding-bottom: 81px;
+    text-align: center; }
+    .benefits__heading span {
+      font-weight: 700;
+      font-style: italic; }
+  .benefits-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .benefits__text {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center; }
+  .benefits__img {
+    padding-left: 350px;
+    display: flex;
+    flex-basis: 50%; }
+  .benefits__list__item {
+    height: 24px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "OpenSans-Regular", Arial, sans-serif;
+    opacity: 0.7; }
+    .benefits__list__item--bold {
+      padding-bottom: 56px;
+      font-family: "Exo2-SemiBold", Arial, sans-serif;
+      font-size: 24px;
+      color: #FFFFFF;
+      font-weight: 400;
+      line-height: 56px;
+      height: 56px;
+      opacity: 1;
+      margin-bottom: 4px; }
+    .benefits__list__item:nth-child(2), .benefits__list__item:nth-child(4), .benefits__list__item:nth-child(6) {
+      padding-bottom: 44px; }
 
+@media screen and (max-width: 1200px) {
+  .hand-phone__text {
+    font-size: 30px; } }
 .buttons {
   max-width: 432px;
   display: flex;
@@ -309,5 +367,3 @@ header {
 
 .show {
   display: block; }
-
-/*# sourceMappingURL=style.css.map */
