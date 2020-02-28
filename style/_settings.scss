@@ -1,0 +1,12 @@
+$heading-font: 'Exo2-SemiBold', Arial, sans-serif;
+$main-font: 'OpenSans-Regular', Arial, sans-serif;
+$blue: #4c75e6;
+$green-text: #8fe125;
+$green-button: #6cbf00;
+$grey: #5c6581;
+$max-width: 1920px;
+
+.container {
+    max-width: $max-width;
+    margin: 0 auto;    
+}

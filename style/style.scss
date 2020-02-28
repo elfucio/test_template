@@ -1,0 +1,54 @@
+@import "_reset";
+@import "_fonts";
+@import "_settings";
+@import "_header";
+@import "_online-number";
+@import "_benefits";    
+
+@import "_buttons.scss";
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    background-color: #3498DB;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .show {
+      display: block;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

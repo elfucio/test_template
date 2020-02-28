@@ -1,0 +1,128 @@
+header {
+    width: 100%;
+    background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%);
+}
+
+.menu-wrapper {
+    max-width: 1275px;
+    margin: 0 auto;
+    padding: 19px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-size: 11px;
+    width: 160px;
+
+    &__link {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    &__heading {
+        margin-left: 10px;
+        font-family: $heading-font;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+.header-menu {
+    width: 617px;
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-family: $heading-font;
+        opacity: 0.5;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;        
+
+        &--selected {
+            opacity: 1;
+        }
+    }
+}
+
+.hand-phone {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    &-wrapper {
+        margin: 0 auto;
+        max-width: 1300px;
+        padding-top: 65px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        // flex-wrap: wrap;
+    }
+
+    &__text {
+        max-width: 600px;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+            
+        &__heading {
+            padding-bottom: 56px;
+            font-family: $heading-font;
+            text-transform: uppercase;
+            // font-size: 6vw;
+            font-size: 45px;
+            font-weight: 500;
+            span {
+                color: $green-text;
+            }
+        }
+
+        &__p {
+            font-family: $main-font;
+            line-height: 24px;
+            font-size: 16px;
+            font-weight: 400;
+            opacity: 0.7;
+
+            &--bold {
+                font-weight: 700;
+                opacity: 1;
+            }
+
+            &:nth-child(3) {
+                padding-bottom: 24px;
+            }
+            &:nth-child(5) {
+                padding-bottom: 66px;
+            }
+        }
+
+    }
+    .hand-phone__picture {
+        width: 100%;
+        max-width: 780px;
+        max-height: 808px;
+        line-height: 0;
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

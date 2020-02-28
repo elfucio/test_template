@@ -1,0 +1,45 @@
+.buttons {
+    max-width: 432px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    width: 200px;
+    height: 64px;
+    padding: 23px 57px;   
+    background-color: transparent;
+    border-radius: 32px;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    
+    &--white {
+        box-shadow: 3px 10px 24px rgba(255, 255, 255, 0.35);
+        background-color: #FFFFFF;
+    }
+ 
+    &__text {
+        display: block;  
+        font-family: $main-font;
+        color: #FFFFFF;
+        width: 97px;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        &--white {
+            font-family: $heading-font;
+            color: $blue;
+            font-weight: 700;
+            letter-spacing: 0.75px;
+        }
+    }
+    // &:hover {    
+    //   filter: opacity(80%);
+    // }
+  
+    // &:active {
+    //   filter: saturate(300%);
+    // } 
+}
