@@ -250,14 +250,13 @@ header {
       text-align: center; }
 
 .benefits {
-  padding-top: 87px;
   background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%); }
   .benefits-bg-wrapper {
+    padding: 87px 0 155px 0;
     background: url("../assets/images/screens-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
-    padding-bottom: 155px; }
+    background-position: left; }
   .benefits__heading {
     flex-basis: 50%;
     max-width: 1030px;
@@ -280,12 +279,8 @@ header {
     justify-content: center; }
   .benefits__text {
     display: flex;
-    flex-basis: 50%;
-    align-items: center; }
-  .benefits__img {
-    padding-left: 350px;
-    display: flex;
-    flex-basis: 50%; }
+    align-items: center;
+    margin-left: 100px; }
   .benefits__list__item {
     height: 24px;
     color: #ffffff;
@@ -307,9 +302,139 @@ header {
     .benefits__list__item:nth-child(2), .benefits__list__item:nth-child(4), .benefits__list__item:nth-child(6) {
       padding-bottom: 44px; }
 
+.buy-number {
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .buy-number__heading {
+    margin: 0 auto;
+    font-family: "Exo2-SemiBold", Arial, sans-serif;
+    font-size: 40px;
+    color: #4c75e6;
+    font-weight: 400;
+    line-height: 56px;
+    text-transform: uppercase;
+    padding-bottom: 76px; }
+  .buy-number__wrapper {
+    max-width: 1232px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .buy-number__item {
+    max-width: 400px;
+    height: auto;
+    flex-basis: 49.5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px; }
+    .buy-number__item__icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fe;
+      padding: 48px 0; }
+      .buy-number__item__icon--svg {
+        margin: 0 24px; }
+    .buy-number__item__text {
+      min-height: 200px;
+      padding: 45px 37px;
+      align-items: center;
+      border-radius: 3px;
+      border-bottom: 1px solid rgba(92, 101, 129, 0.2);
+      border-left: 1px solid rgba(92, 101, 129, 0.2);
+      border-right: 1px solid rgba(92, 101, 129, 0.2);
+      overflow: hidden;
+      text-align: center; }
+      .buy-number__item__text__heading {
+        color: #4c75e6;
+        font-family: "Exo2-SemiBold", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 22px; }
+      .buy-number__item__text__p {
+        color: #5c6581;
+        font-family: "OpenSans-Regular", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 32px; }
+
+.reviews {
+  max-width: 1232px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  z-index: 1; }
+  .reviews .quote {
+    padding: 48px 25px;
+    max-width: 296px;
+    box-shadow: 0 12px 56px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    position: relative; }
+    .reviews .quote-mark {
+      position: absolute;
+      width: 20px;
+      height: 16px;
+      top: 25px;
+      left: 25px;
+      z-index: 2; }
+    .reviews .quote__userpic {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    .reviews .quote__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      height: 100%; }
+      .reviews .quote__text__p {
+        font-family: "OpenSans-Regular", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 24px;
+        margin-bottom: 25px; }
+      .reviews .quote__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center; }
+      .reviews .quote__text__username {
+        margin: 0 auto;
+        color: #4c75e6;
+        font-family: "Exo2-SemiBold", Arial, sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 11px; }
+      .reviews .quote__text__company {
+        margin: 0 auto;
+        color: #5c6581;
+        font-family: "OpenSans-Regular", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 24px;
+        font-style: italic; }
+
 @media screen and (max-width: 1200px) {
   .hand-phone__text {
     font-size: 30px; } }
+@media screen and (max-width: 1200px) {
+  .benefits-bg-wrapper {
+    background-size: cover; } }
 .buttons {
   max-width: 432px;
   display: flex;

@@ -3,3 +3,9 @@
       font-size: 30px;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    .benefits-bg-wrapper {
+      background-size: cover;
+    }
+  }

@@ -1,13 +1,13 @@
 .benefits {
-    padding-top: 87px;
     background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%);
 
     &-bg-wrapper {
+        padding: 87px 0 155px 0;
         background: url("../assets/images/screens-bg.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: left;
-        padding-bottom: 155px;
+
     }
 
     &__heading {
@@ -37,14 +37,15 @@
 
     &__text {
         display: flex;
-        flex-basis: 50%;
+        // flex-basis: 50%;
         align-items: center;
-    }
+        margin-left: 100px;
+    }   
 
     &__img {
-        padding-left: 350px;
-        display: flex;
-        flex-basis: 50%;
+        // padding-left: 350px;
+        // display: flex;        
+        // flex-basis: 50%;
         // max-width: 545px;
         // width: 100%;
         // height: auto;
