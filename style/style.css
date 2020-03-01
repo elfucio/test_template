@@ -98,6 +98,16 @@ a {
   src: url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
+@font-face {
+  font-family: 'Exo2-Light';
+  src: url("../assets/fonts/Exo2-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Exo2-Regular';
+  src: url("../assets/fonts/Exo2-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 .container {
   max-width: 1920px;
   margin: 0 auto; }
@@ -429,6 +439,43 @@ header {
         line-height: 24px;
         font-style: italic; }
 
+.get-number {
+  margin: 0 auto;
+  padding: 112px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../assets/images/get-number-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .get-number__heading {
+    max-width: 750px;
+    margin: 0 auto;
+    font-family: "Exo2-Light", Arial, sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 56px;
+    text-transform: uppercase;
+    margin-bottom: 81px;
+    text-align: center; }
+    .get-number__heading span {
+      font-family: "Exo2-SemiBold", Arial, sans-serif;
+      font-style: italic; }
+  .get-number__text {
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: "OpenSans-Regular", Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 58px;
+    line-height: 56px; }
+  .get-number .get-number-buttons {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 416px;
+    justify-content: space-between; }
+
 @media screen and (max-width: 1200px) {
   .hand-phone__text {
     font-size: 30px; } }
@@ -452,6 +499,9 @@ header {
   .button--white {
     box-shadow: 3px 10px 24px rgba(255, 255, 255, 0.35);
     background-color: #FFFFFF; }
+  .button--green {
+    background-color: #6cbf00;
+    border: none; }
   .button__text {
     display: block;
     font-family: "OpenSans-Regular", Arial, sans-serif;

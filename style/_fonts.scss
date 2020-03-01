@@ -3,11 +3,25 @@
     src: url('../assets/fonts/Exo2-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
-    }
+}
 
 @font-face {
     font-family: 'OpenSans-Regular';
     src: url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    }
+}
+
+@font-face {
+    font-family: 'Exo2-Light';
+    src: url('../assets/fonts/Exo2-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo2-Regular';
+    src: url('../assets/fonts/Exo2-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,45 @@
+.get-number {
+    margin: 0 auto;
+    padding: 112px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../assets/images/get-number-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: left;
+
+    &__heading {
+        max-width: 750px;
+        margin: 0 auto;
+        font-family: $heading-light-font;
+        font-size: 40px;
+        color: #FFFFFF;
+        font-weight: 300;
+        line-height: 56px;
+        text-transform: uppercase;
+        margin-bottom: 81px;
+        text-align: center;
+        span {
+            font-family: $heading-font;
+            font-style: italic;
+        } 
+    }
+
+    &__text {
+        margin: 0 auto;
+        color: #ffffff;
+        font-family: $main-font;
+        font-size: 16px;
+        margin-bottom: 58px;
+        line-height: 56px;
+    }
+
+    .get-number-buttons {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        width: 416px;
+        justify-content: space-between;
+    }
+}

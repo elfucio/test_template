@@ -18,6 +18,11 @@
         box-shadow: 3px 10px 24px rgba(255, 255, 255, 0.35);
         background-color: #FFFFFF;
     }
+
+    &--green {
+        background-color: $green-button;
+        border: none;
+    }
  
     &__text {
         display: block;  
