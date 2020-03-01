@@ -7,19 +7,25 @@
 @import "_buy-number";
 @import "_reviews";
 @import "get-number";
+
+@import "_select-info";
 @import "_media";
 @import "_buttons";
 
 .dropbtn {
-    background-color: #3498DB;
-    color: white;
+    font-family: $heading-light-font;
     font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $grey;
     border: none;
     cursor: pointer;
+    background: none;
   }
   
   .dropdown {
-    background-color: #3498DB;
     position: relative;
     display: inline-block;
   }
@@ -27,13 +33,19 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
     overflow: auto;
     z-index: 1;
   }
   
   .dropdown-content a {
-    color: black;
+    font-family: $heading-light-font;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    color: $grey;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
     display: block;
   }

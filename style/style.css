@@ -113,7 +113,6 @@ a {
   margin: 0 auto; }
 
 header {
-  width: 100%;
   background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%); }
 
 .menu-wrapper {
@@ -260,6 +259,7 @@ header {
       text-align: center; }
 
 .benefits {
+  margin: 0 auto;
   background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%); }
   .benefits-bg-wrapper {
     padding: 87px 0 155px 0;
@@ -292,21 +292,18 @@ header {
     align-items: center;
     margin-left: 100px; }
   .benefits__list__item {
-    height: 24px;
+    max-width: 420px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
     font-family: "OpenSans-Regular", Arial, sans-serif;
     opacity: 0.7; }
     .benefits__list__item--bold {
-      padding-bottom: 56px;
+      padding-bottom: 20px;
       font-family: "Exo2-SemiBold", Arial, sans-serif;
       font-size: 24px;
       color: #FFFFFF;
       font-weight: 400;
-      line-height: 56px;
-      height: 56px;
       opacity: 1;
       margin-bottom: 4px; }
     .benefits__list__item:nth-child(2), .benefits__list__item:nth-child(4), .benefits__list__item:nth-child(6) {
@@ -476,6 +473,32 @@ header {
     width: 416px;
     justify-content: space-between; }
 
+.select-info {
+  max-width: 1275px;
+  margin: 0 auto;
+  padding: 19px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #f8f9fe; }
+  .select-info .call-us {
+    font-family: "Exo2-Light", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #5c6581;
+    width: 286px;
+    display: flex;
+    justify-content: space-between; }
+  .select-info .select-info-wrapper {
+    padding: 94px 0;
+    width: 680px;
+    display: flex;
+    justify-content: space-around; }
+
 @media screen and (max-width: 1200px) {
   .hand-phone__text {
     font-size: 30px; } }
@@ -517,26 +540,36 @@ header {
       letter-spacing: 0.75px; }
 
 .dropbtn {
-  background-color: #3498DB;
-  color: white;
+  font-family: "Exo2-Light", Arial, sans-serif;
   font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #5c6581;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background: none; }
 
 .dropdown {
-  background-color: #3498DB;
   position: relative;
   display: inline-block; }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
   overflow: auto;
   z-index: 1; }
 
 .dropdown-content a {
-  color: black;
+  font-family: "Exo2-Light", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  line-height: 24px;
+  color: #5c6581;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
   display: block; }
 
