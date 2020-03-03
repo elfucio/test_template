@@ -12,26 +12,6 @@ header {
     text-transform: uppercase;
 }
 
-.logo {
-    font-size: 11px;
-    width: 160px;
-
-    &__link {
-        display: flex;
-        flex-direction: row; 
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-
-    &__heading {
-        margin-left: 10px;
-        font-family: $heading-font;
-        color: #FFFFFF;
-        font-size: 15px;
-        font-weight: 400;
-    }
-}
-
 .header-menu {
     width: 617px;
     display: flex;

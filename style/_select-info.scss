@@ -1,7 +1,6 @@
 .select-info {
-    max-width: 1275px;
+    max-width: 1232px;
     margin: 0 auto;
-    padding: 19px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,9 +21,9 @@
     }
 
     .select-info-wrapper {
-        padding: 94px 0;
+        padding: 98px 0;
         width: 680px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }

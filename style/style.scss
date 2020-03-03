@@ -6,11 +6,33 @@
 @import "_benefits";
 @import "_buy-number";
 @import "_reviews";
-@import "get-number";
+@import "_get-number";
 
 @import "_select-info";
+@import "_footer";
 @import "_media";
 @import "_buttons";
+
+.logo {
+  font-size: 11px;
+
+  &__link {
+      display: flex;
+      flex-direction: row; 
+      flex-wrap: nowrap;
+      align-items: center;
+  }
+
+  &__heading {
+      margin-left: 10px;
+      font-family: $heading-light-font;
+      color: #FFFFFF;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+  }
+}
 
 .dropbtn {
     font-family: $heading-light-font;
@@ -52,7 +74,7 @@
   
   .show {
       display: block;
-    }
+  }
   
 
 
