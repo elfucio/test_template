@@ -1,12 +1,24 @@
-$heading-font: 'Exo2-SemiBold', Arial, sans-serif;
+$heading-semibold-font: 'Exo2-SemiBold', Arial, sans-serif;
+$heading-regular-font: 'Exo2-Regular',Arial, sans-serif;
 $heading-light-font: 'Exo2-Light', Arial, sans-serif;
 $main-font: 'OpenSans-Regular', Arial, sans-serif;
+$main-light-font: 'OpenSans-Light', Arial, sans-serif;
 $blue: #4c75e6;
 $green-text: #8fe125;
 $green-button: #6cbf00;
 $grey: #5c6581;
 $max-width: 1920px;
+$h1-size: 2.82rem;        // 45px;
+$h2-size: 1.63rem;        // 26px;
+$h2-big-size: 2.5rem;     // 40px;
+$h3-size: 1.38rem;        // 22px;
+$h4-size: 1rem;           // 16px;
+$h5-size: 0.82rem;        // 13px;
+$default-font-size: 16px;
 
+html {
+    font-size: $default-font-size;
+}
 .container {
     max-width: $max-width;
     margin: 0 auto;    

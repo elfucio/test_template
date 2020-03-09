@@ -65,6 +65,7 @@ details,
 embed,
 figure,
 figcaption,
+textarea,
 footer,
 header,
 hgroup,
@@ -99,6 +100,11 @@ a {
   font-weight: 400;
   font-style: normal; }
 @font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../assets/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
   font-family: 'Exo2-Light';
   src: url("../assets/fonts/Exo2-Light.ttf") format("truetype");
   font-weight: 300;
@@ -108,11 +114,14 @@ a {
   src: url("../assets/fonts/Exo2-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
+html {
+  font-size: 16px; }
+
 .container {
   max-width: 1920px;
   margin: 0 auto; }
 
-header {
+.header {
   background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%); }
 
 .menu-wrapper {
@@ -139,52 +148,48 @@ header {
     font-family: "Exo2-SemiBold", Arial, sans-serif;
     opacity: 0.5;
     color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px; }
+    font-size: 1rem;
+    font-weight: 300; }
     .header-menu__item--selected {
       opacity: 1; }
 
 .hand-phone {
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
+  .hand-phone__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .hand-phone__text__item {
+    padding-bottom: 1.5em; }
   .hand-phone-wrapper {
     margin: 0 auto;
-    max-width: 1300px;
-    padding-top: 65px;
+    max-width: 1275px;
+    padding-top: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: center; }
   .hand-phone__text {
-    max-width: 600px;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     margin: auto 0; }
     .hand-phone__text__heading {
-      padding-bottom: 56px;
+      padding-bottom: 3.5rem;
       font-family: "Exo2-SemiBold", Arial, sans-serif;
       text-transform: uppercase;
-      font-size: 45px;
+      font-size: 2.82rem;
       font-weight: 500; }
       .hand-phone__text__heading span {
         color: #8fe125; }
     .hand-phone__text__p {
       font-family: "OpenSans-Regular", Arial, sans-serif;
-      line-height: 24px;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 400;
       opacity: 0.7; }
       .hand-phone__text__p--bold {
         font-weight: 700;
         opacity: 1; }
-      .hand-phone__text__p:nth-child(3) {
-        padding-bottom: 24px; }
-      .hand-phone__text__p:nth-child(5) {
-        padding-bottom: 66px; }
   .hand-phone .hand-phone__picture {
-    width: 100%;
-    max-width: 780px;
-    max-height: 808px;
     line-height: 0; }
     .hand-phone .hand-phone__picture__img {
       width: 100%;
@@ -192,19 +197,18 @@ header {
 
 .online-number {
   margin: 0 auto;
-  padding: 100px 0 112px 0;
+  padding: 6.25rem 0 6.3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center; }
   .online-number__heading {
     margin: 0 auto;
     font-family: "Exo2-SemiBold", Arial, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #4c75e6;
     font-weight: 400;
-    line-height: 56px;
     text-transform: uppercase;
-    padding-bottom: 76px; }
+    padding-bottom: 4.75rem; }
   .online-number__wrapper {
     max-width: 1232px;
     width: 100%;
@@ -214,7 +218,6 @@ header {
     justify-content: space-between; }
   .online-number__item {
     max-width: 608px;
-    height: auto;
     flex-basis: 49.5%;
     display: flex;
     flex-direction: column; }
@@ -224,20 +227,20 @@ header {
       justify-content: center;
       align-items: center;
       background-color: #f8f9fe;
-      padding: 60px 0; }
+      padding: 3.75rem 0; }
       .online-number__item__icon--svg {
-        margin: 0 16px; }
+        margin: 0 1rem; }
     .online-number__item__text {
-      min-height: 200px;
+      min-height: 250px;
       margin: 0 auto;
-      padding: 32px 60px 40px 60px;
+      padding: 2rem 3.75rem 2.5rem 3.75rem;
       align-items: center;
       border-radius: 3px;
       border-bottom: 1px solid rgba(92, 101, 129, 0.2);
       border-left: 1px solid rgba(92, 101, 129, 0.2);
       border-right: 1px solid rgba(92, 101, 129, 0.2);
       font-family: "OpenSans-Regular", Arial, sans-serif;
-      font-size: 20px;
+      font-size: 1.38rem;
       color: #5c6581;
       font-weight: 300;
       overflow: hidden;
@@ -247,7 +250,7 @@ header {
   margin: 0 auto;
   background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%); }
   .benefits-bg-wrapper {
-    padding: 87px 0 155px 0;
+    padding: 5.5rem 0 9.7rem 0;
     background: url("../assets/images/screens-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -257,12 +260,11 @@ header {
     max-width: 1030px;
     margin: 0 auto;
     font-family: "Exo2-SemiBold", Arial, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #FFFFFF;
     font-weight: 400;
-    line-height: 56px;
     text-transform: uppercase;
-    padding-bottom: 81px;
+    padding-bottom: 5rem;
     text-align: center; }
     .benefits__heading span {
       font-weight: 700;
@@ -275,40 +277,39 @@ header {
   .benefits__text {
     display: flex;
     align-items: center;
-    margin-left: 100px; }
+    margin-left: 6.25rem; }
   .benefits__list__item {
     max-width: 420px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     font-family: "OpenSans-Regular", Arial, sans-serif;
     opacity: 0.7; }
     .benefits__list__item--bold {
-      padding-bottom: 20px;
+      padding-bottom: 1.25rem;
       font-family: "Exo2-SemiBold", Arial, sans-serif;
-      font-size: 24px;
+      font-size: 1.63rem;
       color: #FFFFFF;
       font-weight: 400;
       opacity: 1;
       margin-bottom: 4px; }
     .benefits__list__item:nth-child(2), .benefits__list__item:nth-child(4), .benefits__list__item:nth-child(6) {
-      padding-bottom: 44px; }
+      padding-bottom: 2.75rem; }
 
 .buy-number {
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 6.25rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center; }
   .buy-number__heading {
     margin: 0 auto;
     font-family: "Exo2-SemiBold", Arial, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #4c75e6;
     font-weight: 400;
-    line-height: 56px;
     text-transform: uppercase;
-    padding-bottom: 76px; }
+    padding-bottom: 4.75rem; }
   .buy-number__wrapper {
     max-width: 1232px;
     width: 100%;
@@ -323,19 +324,19 @@ header {
     flex-basis: 49.5%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px; }
+    margin-bottom: 1rem; }
     .buy-number__item__icon {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       background-color: #f8f9fe;
-      padding: 48px 0; }
+      padding: 3rem 0; }
       .buy-number__item__icon--svg {
-        margin: 0 24px; }
+        margin: 0 1.5rem; }
     .buy-number__item__text {
       min-height: 200px;
-      padding: 45px 37px;
+      padding: 2.8rem 2.3rem;
       align-items: center;
       border-radius: 3px;
       border-bottom: 1px solid rgba(92, 101, 129, 0.2);
@@ -346,16 +347,14 @@ header {
       .buy-number__item__text__heading {
         color: #4c75e6;
         font-family: "Exo2-SemiBold", Arial, sans-serif;
-        font-size: 20px;
+        font-size: 1.38rem;
         font-weight: 400;
-        line-height: 24px;
-        padding-bottom: 22px; }
+        padding-bottom: 1.375rem; }
       .buy-number__item__text__p {
         color: #5c6581;
         font-family: "OpenSans-Regular", Arial, sans-serif;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 32px; }
+        font-size: 1rem;
+        font-weight: 300; }
 
 .reviews {
   max-width: 1232px;
@@ -423,7 +422,7 @@ header {
 
 .get-number {
   margin: 0 auto;
-  padding: 112px 0;
+  padding: 7rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -434,12 +433,11 @@ header {
     max-width: 750px;
     margin: 0 auto;
     font-family: "Exo2-Light", Arial, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #FFFFFF;
     font-weight: 300;
-    line-height: 56px;
     text-transform: uppercase;
-    margin-bottom: 81px;
+    margin-bottom: 5rem;
     text-align: center; }
     .get-number__heading span {
       font-family: "Exo2-SemiBold", Arial, sans-serif;
@@ -448,15 +446,110 @@ header {
     margin: 0 auto;
     color: #ffffff;
     font-family: "OpenSans-Regular", Arial, sans-serif;
-    font-size: 16px;
-    margin-bottom: 58px;
-    line-height: 56px; }
+    font-size: 1rem;
+    margin-bottom: 3.5rem; }
   .get-number .get-number-buttons {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     width: 416px;
     justify-content: space-between; }
+
+.devices-rate-faq {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .devices-rate-faq .devices {
+    margin: 0 auto;
+    padding: 6.25rem; }
+    .devices-rate-faq .devices__heading {
+      margin: 0 auto;
+      max-width: 750px;
+      font-family: "Exo2-Regular", Arial, sans-serif;
+      font-size: 2.5rem;
+      color: #4c75e6;
+      font-weight: 300;
+      text-transform: uppercase; }
+    .devices-rate-faq .devices__text--small {
+      color: #5c6581;
+      padding-top: 2.5rem;
+      font-family: "OpenSans-Regular", Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 400; }
+    .devices-rate-faq .devices__img {
+      width: 100%;
+      padding-top: 2.5rem; }
+    .devices-rate-faq .devices__text {
+      margin: 0 auto;
+      max-width: 740px;
+      color: #5c6581;
+      padding-top: 5rem;
+      font-family: "OpenSans-Regular", Arial, sans-serif;
+      font-size: 1.38rem;
+      font-weight: 300; }
+  .devices-rate-faq .company-rate {
+    max-width: 1232px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .devices-rate-faq .company-rate__img {
+      margin: 0 6px;
+      box-shadow: 0 12px 56px rgba(0, 0, 0, 0.07);
+      display: block; }
+
+.faq {
+  margin: 0 auto;
+  padding: 6.25rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  .faq__heading {
+    margin: 0 auto;
+    font-family: "Exo2-Regular", Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #4c75e6;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 4.75rem; }
+  .faq .faq-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1232px; }
+  .faq__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 12px 56px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+    background-color: #ffffff;
+    max-width: 608px;
+    height: 280px;
+    padding: 2rem 2.375rem 2.625rem 2.375rem;
+    margin-bottom: 1rem;
+    position: relative; }
+    .faq__item__question {
+      padding-right: 5.3rem;
+      text-align: left;
+      color: #4c75e6;
+      font-family: "OpenSans-Regular", Arial, sans-serif;
+      font-size: h3-size;
+      font-weight: 400; }
+    .faq__item__answer {
+      text-align: left;
+      font-family: "OpenSans-Light", Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: #5c6581; }
+    .faq__item__number {
+      position: absolute;
+      top: 24px;
+      right: 24px; }
 
 .select-info {
   max-width: 1232px;
@@ -468,17 +561,16 @@ header {
   background-color: #f8f9fe; }
   .select-info .call-us {
     font-family: "Exo2-Light", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0.8px;
-    line-height: 24px;
     text-transform: uppercase;
     color: #5c6581;
     width: 286px;
     display: flex;
     justify-content: space-between; }
   .select-info .select-info-wrapper {
-    padding: 98px 0;
+    padding: 6.125rem 0;
     width: 680px;
     display: flex;
     justify-content: space-between; }
@@ -491,7 +583,7 @@ header {
     display: flex;
     justify-content: end; }
     .footer .footer-links-wrapper .footer-links {
-      padding: 72px 0px;
+      padding: 4.5rem 0px;
       align-items: center;
       width: 790px;
       display: flex;
@@ -508,7 +600,7 @@ header {
   .footer .footer-bottom {
     max-width: 1232px;
     margin: 0 auto;
-    padding: 58px 0px;
+    padding: 3.625rem 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -516,10 +608,9 @@ header {
     .footer .footer-bottom .footer-bottom__link,
     .footer .footer-bottom .footer-bottom__copyright {
       font-family: "Exo2-Light", Arial, sans-serif;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 400;
       letter-spacing: 0.8px;
-      line-height: 24px;
       opacity: 0.7;
       text-transform: uppercase;
       color: #FFFFFF; }
@@ -532,11 +623,25 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2); }
 
 @media screen and (max-width: 1200px) {
-  .hand-phone__text {
-    font-size: 30px; } }
-@media screen and (max-width: 1200px) {
-  .benefits-bg-wrapper {
-    background-size: cover; } }
+  html {
+    font-size: 14px; } }
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 12px; } }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px; }
+
+  .header,
+  .online-number,
+  .benefits,
+  .buy-number,
+  .reviews,
+  .get-number,
+  .devices-rate-faq,
+  .select-info,
+  .footer {
+    padding: 0 10px; } }
 .buttons {
   max-width: 432px;
   display: flex;
@@ -544,11 +649,11 @@ header {
   justify-content: space-between; }
 
 .button {
-  width: 200px;
-  height: 64px;
-  padding: 23px 52px;
+  width: 13rem;
+  height: 4rem;
+  padding: 1.4375rem 3.25rem;
   background-color: transparent;
-  border-radius: 32px;
+  border-radius: 2rem;
   border: 1px solid #FFFFFF;
   outline: none; }
   .button--white {
@@ -557,42 +662,49 @@ header {
   .button--green {
     background-color: #6cbf00;
     border: none; }
+  .button--menu {
+    width: 10.5rem;
+    height: 3rem;
+    padding: 0.875rem 2.625rem; }
   .button__text {
     display: block;
     font-family: "OpenSans-Regular", Arial, sans-serif;
     color: #FFFFFF;
-    width: 97px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase; }
+    .button__text--menu {
+      font-size: 0.9375rem; }
     .button__text--white {
       font-family: "Exo2-SemiBold", Arial, sans-serif;
       color: #4c75e6;
       font-weight: 700;
-      letter-spacing: 0.75px; }
+      letter-spacing: 0.046875rem; }
+
+.hidden-heading {
+  display: none; }
 
 .logo {
-  font-size: 11px; }
+  font-size: 0.6875rem; }
   .logo__link {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center; }
   .logo__heading {
-    margin-left: 10px;
+    margin-left: 0.625rem;
     font-family: "Exo2-Light", Arial, sans-serif;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 0.1875rem;
     text-transform: uppercase; }
 
 .dropbtn {
   font-family: "Exo2-Light", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 0.8px;
-  line-height: 24px;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
   color: #5c6581;
   border: none;
@@ -611,10 +723,9 @@ header {
 
 .dropdown-content a {
   font-family: "Exo2-Light", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 0.8px;
-  line-height: 24px;
+  letter-spacing: 0.05rem;
   color: #5c6581;
   border: none;
   cursor: pointer;

@@ -1,0 +1,125 @@
+.devices-rate-faq {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .devices {
+        margin: 0 auto;
+        padding: 6.25rem;
+        
+        &__heading {
+            margin: 0 auto;
+            max-width: 750px;
+            font-family: $heading-regular-font;
+            font-size: $h2-big-size;
+            color: $blue;
+            font-weight: 300;
+            text-transform: uppercase;
+        }     
+        
+        &__text--small {
+            color: $grey;
+            padding-top: 2.5rem;
+            font-family: $main-font;
+            font-size: $h4-size;
+            font-weight: 400;
+        }
+
+        &__img {
+            width: 100%;
+            padding-top: 2.5rem;
+        }
+
+        &__text {
+            margin: 0 auto;
+            max-width: 740px;
+            color: $grey;
+            padding-top: 5rem;
+            font-family: $main-font;
+            font-size: $h3-size;
+            font-weight: 300;
+        }   
+    }
+
+    .company-rate {
+        max-width: 1232px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        &__img {
+            margin: 0 6px;
+            box-shadow: 0 12px 56px rgba(0, 0, 0, 0.07);
+            display: block;
+            // width: 100%;
+        }
+    }
+}
+
+.faq {
+    margin: 0 auto;
+    padding: 6.25rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        margin: 0 auto;
+        font-family: $heading-regular-font;
+        font-size: $h2-big-size;
+        color: $blue;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-bottom: 4.75rem;
+    } 
+
+    .faq-wrapper {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1232px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 12px 56px rgba(0, 0, 0, 0.07);
+        border-radius: 4px;
+        background-color: #ffffff;
+        max-width: 608px;
+        height: 280px;
+        padding: 2rem 2.375rem 2.625rem 2.375rem;
+        margin-bottom: 1rem;
+        position: relative;
+
+        &__question {
+            padding-right: 5.3rem;
+            // max-width: 437px;
+            text-align: left;
+            color: $blue;
+            font-family: $main-font;
+            font-size: h3-size;
+            font-weight: 400;
+        }
+
+        &__answer {
+            text-align: left;
+            font-family: $main-light-font;
+            font-size: $h4-size;
+            font-weight: 300;
+            color: $grey;
+        }
+
+        &__number {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+        }
+    }
+}

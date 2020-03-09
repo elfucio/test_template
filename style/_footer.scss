@@ -8,7 +8,7 @@
         justify-content: end;
 
         .footer-links {
-            padding: 72px 0px;
+            padding: 4.5rem 0px;
             align-items: center;
             width: 790px;
             display: flex;
@@ -31,7 +31,7 @@
     .footer-bottom {
         max-width: 1232px;
         margin: 0 auto;
-        padding: 58px 0px;
+        padding: 3.625rem 0px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -40,10 +40,9 @@
         .footer-bottom__link,
         .footer-bottom__copyright {
             font-family: $heading-light-font;
-            font-size: 16px;
+            font-size: $h4-size;
             font-weight: 400;
             letter-spacing: 0.8px;
-            line-height: 24px;
             opacity: 0.7;
             text-transform: uppercase;
             color: #FFFFFF;

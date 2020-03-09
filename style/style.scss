@@ -7,14 +7,18 @@
 @import "_buy-number";
 @import "_reviews";
 @import "_get-number";
-
+@import "_devices-rate-faq";
 @import "_select-info";
 @import "_footer";
 @import "_media";
 @import "_buttons";
 
+.hidden-heading {
+  display: none;
+}
+
 .logo {
-  font-size: 11px;
+  font-size: 0.6875rem;
 
   &__link {
       display: flex;
@@ -24,22 +28,21 @@
   }
 
   &__heading {
-      margin-left: 10px;
+      margin-left: 0.625rem;
       font-family: $heading-light-font;
       color: #FFFFFF;
-      font-size: 15px;
+      font-size: 0.9375rem;
       font-weight: 400;
-      letter-spacing: 3px;
+      letter-spacing: 0.1875rem;
       text-transform: uppercase;
   }
 }
 
 .dropbtn {
     font-family: $heading-light-font;
-    font-size: 16px;
+    font-size: $h4-size;
     font-weight: 300;
-    letter-spacing: 0.8px;
-    line-height: 24px;
+    letter-spacing: 0.05rem;
     text-transform: uppercase;
     color: $grey;
     border: none;
@@ -61,10 +64,9 @@
   
   .dropdown-content a {
     font-family: $heading-light-font;
-    font-size: 16px;
+    font-size: $h4-size;
     font-weight: 300;
-    letter-spacing: 0.8px;
-    line-height: 24px;
+    letter-spacing: 0.05rem;
     color: $grey;
     border: none;
     cursor: pointer;

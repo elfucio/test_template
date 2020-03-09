@@ -6,11 +6,11 @@
 }
 
 .button {
-    width: 200px;
-    height: 64px;
-    padding: 23px 52px;   
+    width: 13rem;
+    height: 4rem;
+    padding: 1.4375rem 3.25rem;   
     background-color: transparent;
-    border-radius: 32px;
+    border-radius: 2rem;
     border: 1px solid #FFFFFF;
     outline: none;
     
@@ -23,21 +23,30 @@
         background-color: $green-button;
         border: none;
     }
+
+    &--menu {
+        width: 10.5rem;
+        height: 3rem;
+        padding: 0.875rem 2.625rem;  
+    }
  
     &__text {
         display: block;  
         font-family: $main-font;
         color: #FFFFFF;
-        width: 97px;
-        font-size: 15px;
+        font-size: $h4-size;
         font-weight: 400;
         text-transform: uppercase;
 
+        &--menu {
+            font-size: 0.9375rem;
+        }
+
         &--white {
-            font-family: $heading-font;
+            font-family: $heading-semibold-font;
             color: $blue;
             font-weight: 700;
-            letter-spacing: 0.75px;
+            letter-spacing: 0.046875rem;
         }
     }
     // &:hover {    

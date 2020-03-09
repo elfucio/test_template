@@ -1,4 +1,4 @@
-header {
+.header {
     background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%);
 }
 
@@ -27,12 +27,11 @@ header {
     &__item {
         display: flex;
         align-items: center;
-        font-family: $heading-font;
+        font-family: $heading-semibold-font;
         opacity: 0.5;
         color: #FFFFFF;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 24px;        
+        font-size: $h4-size;
+        font-weight: 300;       
 
         &--selected {
             opacity: 1;
@@ -43,10 +42,20 @@ header {
 .hand-phone {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__text__item {
+        padding-bottom: 1.5em;
+    }
+
     &-wrapper {
         margin: 0 auto;
-        max-width: 1300px;
-        padding-top: 65px;
+        max-width: 1275px;
+        padding-top: 4rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -54,18 +63,16 @@ header {
     }
 
     &__text {
-        max-width: 600px;
         color: #FFFFFF;
         display: flex;
         flex-direction: column;
         margin: auto 0;
             
         &__heading {
-            padding-bottom: 56px;
-            font-family: $heading-font;
+            padding-bottom: 3.5rem;
+            font-family: $heading-semibold-font;
             text-transform: uppercase;
-            // font-size: 6vw;
-            font-size: 45px;
+            font-size: $h1-size;
             font-weight: 500;
             span {
                 color: $green-text;
@@ -74,8 +81,7 @@ header {
 
         &__p {
             font-family: $main-font;
-            line-height: 24px;
-            font-size: 16px;
+            font-size: $h4-size;
             font-weight: 400;
             opacity: 0.7;
 
@@ -83,20 +89,10 @@ header {
                 font-weight: 700;
                 opacity: 1;
             }
-
-            &:nth-child(3) {
-                padding-bottom: 24px;
-            }
-            &:nth-child(5) {
-                padding-bottom: 66px;
-            }
         }
-
     }
+
     .hand-phone__picture {
-        width: 100%;
-        max-width: 780px;
-        max-height: 808px;
         line-height: 0;
 
         &__img {
