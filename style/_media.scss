@@ -1,32 +1,7 @@
-// @media screen and (max-width: 1200px) {
-//     .hand-phone__text {
-//       font-size: 30px;
-//     }
-//   }
-
-//   @media screen and (max-width: 1200px) {
-//     .benefits-bg-wrapper {
-//       background-size: cover;
-//     }
-//   }
-
-  @media screen and (max-width: 1200px) {
-    html {
-      font-size: 14px;
-    }
-  }
-
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: $media-big-mobile) {
     html {
       font-size: 12px;
     }
-  }
-
-  @media screen and (max-width: 768px) {
-    html {
-      font-size: 10px;
-    }
-
     .header,
     .online-number,
     .benefits,
@@ -36,13 +11,9 @@
     .devices-rate-faq,
     .select-info,
     .footer {
-      padding: 0 10px;
+      // padding-left: 10px;
+      // padding-right: 10px;
+      overflow: hidden;
     }
   }
 
-  // 320px mobile                             10px padding on sides required
-  // 460px big mobile                         10px padding on sides required
-  // 768px tab                                10px padding on sides required
-  // 960 small desktop
-  // 1200px normal desktop
-  // bigger than 1200px HD desktop

@@ -77,4 +77,8 @@
             }
         }       
     }
+
+    @media screen and (max-width: $media-big-mobile) {
+        flex-wrap: nowrap;
+    }
 }

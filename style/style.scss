@@ -12,6 +12,7 @@
 @import "_footer";
 @import "_media";
 @import "_buttons";
+@import "_burger";
 
 .hidden-heading {
   display: none;
@@ -19,7 +20,9 @@
 
 .logo {
   font-size: 0.6875rem;
-
+  svg {
+    fill: #FFF;
+  }
   &__link {
       display: flex;
       flex-direction: row; 
@@ -38,45 +41,6 @@
   }
 }
 
-.dropbtn {
-    font-family: $heading-light-font;
-    font-size: $h4-size;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    color: $grey;
-    border: none;
-    cursor: pointer;
-    background: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    overflow: auto;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    font-family: $heading-light-font;
-    font-size: $h4-size;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
-    color: $grey;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .show {
-      display: block;
-  }
   
 
 

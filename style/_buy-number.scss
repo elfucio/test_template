@@ -43,6 +43,14 @@
             &--svg {
                 margin: 0 1.5rem;
             }
+            &--line {
+                max-width: 5rem;
+                overflow: hidden;
+
+                @media screen and (max-width: $media-big-mobile) {
+                    display: none;
+                }
+            }
         }
 
         &__text {
@@ -70,6 +78,17 @@
                 font-size: $h4-size;
                 font-weight: 300;
             }
+
+            @media screen and (max-width: $media-big-mobile) {
+                padding: 0.8rem 1.3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
         }
+    }
+
+    @media screen and (max-width: $media-big-mobile) {
+        text-align: center;
     }
 }

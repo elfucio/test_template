@@ -1,13 +1,16 @@
 .buttons {
-    max-width: 432px;
+    max-width: 27rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 3rem;
+    margin: 0 auto;
 }
 
 .button {
     width: 13rem;
     height: 4rem;
+    margin: 0 0.5rem;
     padding: 1.4375rem 3.25rem;   
     background-color: transparent;
     border-radius: 2rem;
@@ -34,7 +37,7 @@
         display: block;  
         font-family: $main-font;
         color: #FFFFFF;
-        font-size: $h4-size;
+        font-size: $h5-size;
         font-weight: 400;
         text-transform: uppercase;
 

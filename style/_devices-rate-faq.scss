@@ -40,7 +40,11 @@
             font-family: $main-font;
             font-size: $h3-size;
             font-weight: 300;
-        }   
+        }
+        
+        @media screen and (max-width: $media-big-mobile) {
+            padding: 1.25rem;
+        }
     }
 
     .company-rate {
@@ -49,13 +53,21 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     
         &__img {
             margin: 0 6px;
             box-shadow: 0 12px 56px rgba(0, 0, 0, 0.07);
-            display: block;
             // width: 100%;
+
+            @media screen and (max-width: $media-big-mobile) {
+                max-width: 152px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin: 0.5rem;
+            }
         }
     }
 }
@@ -92,8 +104,8 @@
         box-shadow: 0 12px 56px rgba(0, 0, 0, 0.07);
         border-radius: 4px;
         background-color: #ffffff;
-        max-width: 608px;
-        height: 280px;
+        max-width: 38rem;
+        height: 17.5rem;
         padding: 2rem 2.375rem 2.625rem 2.375rem;
         margin-bottom: 1rem;
         position: relative;
@@ -106,6 +118,10 @@
             font-family: $main-font;
             font-size: h3-size;
             font-weight: 400;
+
+            @media screen and (max-width: $media-desktop) {
+                padding: 0;
+            }
         }
 
         &__answer {
@@ -120,6 +136,10 @@
             position: absolute;
             top: 24px;
             right: 24px;
+
+            @media screen and (max-width: $media-desktop) {
+                display: none;
+            }
         }
     }
 }

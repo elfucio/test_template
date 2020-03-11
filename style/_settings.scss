@@ -16,6 +16,13 @@ $h4-size: 1rem;           // 16px;
 $h5-size: 0.82rem;        // 13px;
 $default-font-size: 16px;
 
+  $media-mobile: 320px;            // 320px mobile                             10px padding on sides required
+  $media-big-mobile: 460px;        // 460px big mobile                         10px padding on sides required
+  $media-tab: 768px;               // 768px tab                                10px padding on sides required
+  $media-small-desktop: 960px;     // 960 small desktop
+  $media-desktop: 1200px;          // 1200px normal desktop
+  $media-big-desktop: 460px;       // bigger than 1200px HD desktop
+
 html {
     font-size: $default-font-size;
 }

@@ -8,6 +8,10 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: left;
+
+        @media screen and (max-width: $media-desktop) {
+            background-size: cover;
+        }
     }
 
     &__heading {
@@ -39,16 +43,17 @@
         // flex-basis: 50%;
         align-items: center;
         margin-left: 6.25rem;
+
+        @media screen and (max-width: $media-desktop) {
+            margin: 0 auto;
+        }
     }   
 
-    // &__img {
-    //         // padding-left: 350px;
-    //         // display: flex;        
-    //         // flex-basis: 50%;
-    //         // max-width: 545px;
-    //         // width: 100%;
-    //         // height: auto;
-    // }
+    &__img {
+        @media screen and (max-width: $media-big-mobile) {
+            display: none;
+        }
+    }
 
     &__list {
         &__item {
@@ -75,5 +80,9 @@
                 padding-bottom: 2.75rem;
             }
         }
+    }
+
+    @media screen and (max-width: $media-big-mobile) {
+        text-align: center;
     }
 }

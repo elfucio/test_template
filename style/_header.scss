@@ -10,6 +10,20 @@
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
+
+    @media screen and (max-width: $media-big-mobile) {
+        background-color: #fff;
+        .logo {
+            svg {
+                fill: $blue;
+            }
+          
+            &__heading {
+                color: $grey;
+                font-size: 1.2rem;
+            }
+        }
+    }
 }
 
 .header-menu {
@@ -60,6 +74,10 @@
         flex-direction: row;
         justify-content: center;
         // flex-wrap: wrap;
+
+        @media screen and (max-width: $media-big-mobile) {
+            flex-wrap: wrap;
+        }
     }
 
     &__text {
@@ -67,6 +85,11 @@
         display: flex;
         flex-direction: column;
         margin: auto 0;
+
+        @media screen and (max-width: $media-big-mobile) {
+            order: 2;
+            text-align: center;
+        }
             
         &__heading {
             padding-bottom: 3.5rem;
@@ -90,14 +113,44 @@
                 opacity: 1;
             }
         }
+
+        .header-buttons {
+            margin: 0;
+
+            @media screen and (max-width: $media-big-mobile) {
+                margin: 0 auto;   
+            }        
+        }
     }
 
     .hand-phone__picture {
+        background-image: url("../assets/images/circle.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
         line-height: 0;
+
+        @media screen and (max-width: $media-big-mobile) {
+            line-height: 0;
+            order: 1;
+            background-size: cover;
+        }
 
         &__img {
             width: 100%;
             height: auto;
+
+            @media screen and (max-width: $media-big-mobile) {
+                width: 106vw;
+                height: auto;
+                transform: rotate(330deg);
+                z-index: 0;
+                position: relative;
+            }
+        }
+
+        &__img--remove {
+            z-index: -1;
         }
     }
 }
