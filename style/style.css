@@ -210,28 +210,24 @@ html {
         .hand-phone__text .header-buttons {
           margin: 0 auto; } }
   .hand-phone .hand-phone__picture {
-    background-image: url("../assets/images/circle.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
     line-height: 0; }
     @media screen and (max-width: 460px) {
       .hand-phone .hand-phone__picture {
         line-height: 0;
-        order: 1;
-        background-size: cover; } }
+        order: 1; } }
+    .hand-phone .hand-phone__picture .hand-phone__picture__img--rotate {
+      display: none; }
     .hand-phone .hand-phone__picture__img {
       width: 100%;
       height: auto; }
-      @media screen and (max-width: 460px) {
-        .hand-phone .hand-phone__picture__img {
-          width: 106vw;
-          height: auto;
-          transform: rotate(330deg);
-          z-index: 0;
-          position: relative; } }
-    .hand-phone .hand-phone__picture__img--remove {
-      z-index: -1; }
+    @media screen and (max-width: 460px) {
+      .hand-phone .hand-phone__picture .hand-phone__picture__img {
+        display: none; }
+      .hand-phone .hand-phone__picture .hand-phone__picture__img--rotate {
+        display: block;
+        z-index: 0;
+        width: 112%;
+        height: auto; } }
 
 .online-number {
   margin: 0 auto;
